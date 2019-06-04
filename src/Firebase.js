@@ -1,0 +1,18 @@
+import * as firebase from 'firebase';
+
+
+const settings = {timestampsInSnapshots: true};
+const config = {
+    apiKey: "AIzaSyBkiz6DVubovKApkTax86AJ-F-EtItA5Rs",
+    authDomain: "app-react-crud.firebaseapp.com",
+    databaseURL: "https://app-react-crud.firebaseio.com",
+    projectId: "app-react-crud",
+    storageBucket: "app-react-crud.appspot.com",
+    messagingSenderId: "353496188845",
+    appId: "1:353496188845:web:72984e7ca842f14b"
+};
+firebase.initializeApp(config);
+
+firebase.firestore().settings(settings);
+
+export default firebase;
