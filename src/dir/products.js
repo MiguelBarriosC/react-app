@@ -54,7 +54,7 @@ class Products extends Component {
 
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Listado</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,24 +80,12 @@ class Products extends Component {
     </div>
   </nav>
 
-  <section class="page-section">
-    <div class="container">
-      <div class="product-item">
-        <div class="product-item-title d-flex">
-         
-        </div>
-       
-        <div class="product-item-description d-flex mr-auto">
-          
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
       <div class="container">
         <div class="panel panel-default">
           
-          <div class="panel-body">
+         
             <h1><Link to="/create">Añadir</Link></h1>
             <table class="table table-stripe">
               <thead>
@@ -119,7 +107,6 @@ class Products extends Component {
             </table>
           </div>
         </div>
-      </div>
 
 
   <footer class="footer text-faded text-center py-5">

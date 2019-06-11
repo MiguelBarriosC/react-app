@@ -5,7 +5,7 @@ import './vendor/bootstrap/css/bootstrap.min.css'
 import './css/business-casual.css';
 import './css/business-casual.min.css';
 import './fonts/google_fonts.css';
-import './fonts/google_fonts_api.css'
+import './fonts/google_fonts_api.css';
 import './img/bg.jpg';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

@@ -35,7 +35,7 @@ class Create extends Component {
         description: '',
         author: ''
       });
-      this.props.history.push("/")
+      this.props.history.push("/products")
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
@@ -53,19 +53,19 @@ class Create extends Component {
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/" class="btn btn-primary"> Lista</Link></h4>
+            <h4><Link to="/products" class="btn btn-primary"> Volver</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="title">Titulo:</label>
-                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Titlulo" />
+                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Titlulo" required/>
               </div>
               <div class="form-group">
                 <label for="description">Descripción:</label>
-                <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Descripción" cols="80" rows="3">{description}</textArea>
+                <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Descripción" cols="80" rows="3" required>{description}</textArea>
               </div>
               <div class="form-group">
                 <label for="author">Autor:</label>
-                <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Autor" />
+                <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Autor" pattern="[A-Za-z ñÑáéíóúÁÉÍÓÚ]+" required />
               </div>
               <button type="submit" class="btn btn-success">Guardar</button>
             </form>

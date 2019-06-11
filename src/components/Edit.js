@@ -54,7 +54,7 @@ class Edit extends Component {
         description: '',
         author: ''
       });
-      this.props.history.push("/show/"+this.props.match.params.id)
+      this.props.history.push("/products/")
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
@@ -71,19 +71,19 @@ class Edit extends Component {
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to={`/show/${this.state.key}`} class="btn btn-primary">Lista</Link></h4>
+            <h4><Link to={`/products/${this.state.key}`} class="btn btn-primary">Volver</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="title">Titulo:</label>
-                <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
+                <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" required />
               </div>
               <div class="form-group">
                 <label for="description">Descripcion:</label>
-                <input type="text" class="form-control" name="description" value={this.state.description} onChange={this.onChange} placeholder="Description" />
+                <input type="text" class="form-control" name="description" value={this.state.description} onChange={this.onChange} placeholder="Description" required/>
               </div>
               <div class="form-group">
                 <label for="author">Autor:</label>
-                <input type="text" class="form-control" name="author" value={this.state.author} onChange={this.onChange} placeholder="Author" />
+                <input type="text" class="form-control" name="author" value={this.state.author} onChange={this.onChange} placeholder="Author" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ ]+"/>
               </div>
               <button type="submit" class="btn btn-success">Editar</button>
             </form>

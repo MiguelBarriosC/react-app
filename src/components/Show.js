@@ -30,7 +30,7 @@ class Show extends Component {
   delete(id){
     firebase.firestore().collection('boards').doc(id).delete().then(() => {
       console.log("Document successfully deleted!");
-      this.props.history.push("/")
+      this.props.history.push("/products")
     }).catch((error) => {
       console.error("Error removing document: ", error);
     });
@@ -41,7 +41,7 @@ class Show extends Component {
       <div class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4><Link to="/"> Lista</Link></h4>
+          <h4><Link to="/products"> Volver</Link></h4>
             <h3 class="panel-title">
               {this.state.board.title}
             </h3>
