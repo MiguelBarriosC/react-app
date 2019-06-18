@@ -6,7 +6,7 @@ import '../css/business-casual.css';
 import '../css/business-casual.min.css';
 import '../fonts/google_fonts.css';
 import '../fonts/google_fonts_api.css'
-
+import '../css/textb.css'
 
 
 class Products extends Component {
@@ -70,10 +70,10 @@ class Products extends Component {
             <a class="nav-link text-uppercase text-expanded" href="/products">Listado</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">Acerca De</a>
+            <a class="nav-link text-uppercase text-expanded" href="#">Acerca De</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store.html">Sugerencias</a>
+            <a class="nav-link text-uppercase text-expanded" href="/store">Sugerencias</a>
           </li>
         </ul>
       </div>
@@ -87,6 +87,7 @@ class Products extends Component {
           
          
             <h1><Link to="/create">Añadir</Link></h1>
+<div class="textb">
             <table class="table table-stripe">
               <thead>
                 <tr>
@@ -107,7 +108,7 @@ class Products extends Component {
             </table>
           </div>
         </div>
-
+</div>
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">

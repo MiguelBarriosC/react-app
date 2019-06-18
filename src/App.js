@@ -40,7 +40,7 @@ class App extends Component {
             <a class="nav-link text-uppercase text-expanded" href="/products">Listado</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/about">Acerca de</a>
+            <a class="nav-link text-uppercase text-expanded" href="#">Acerca de</a>
           </li>
         
           <li class="nav-item px-lg-4">
